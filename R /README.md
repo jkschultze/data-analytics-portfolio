@@ -1,6 +1,6 @@
 # R Data Portfolio
 
-![Verbrauchs- und Leistungsanalyse](R/Paarweise_Zusammenhaenge_mpg_hp_wt_qsec.png)  
+![Verbrauchs- und Leistungsanalyse](Paarweise_Zusammenhaenge_mpg_hp_wt_qsec.png)  
 *Visualisierung: Paarweise Fahrzeugkennzahlen (mpg, hp, wt, qsec)*
 
 ---
@@ -99,7 +99,7 @@ Untersuchung des Bruchverhaltens von Webfäden unter variierenden Spannungen und
 **Beschreibung:**  
 Grundlagenübungen zu Datentypen, Datenstrukturen, Kontrollfluss, Funktionen, Statistik, Datenimport & Visualisierung.
 
-**Report:** [basics.html](basics.html)
+**Report:** [basics.Rmd](basics.Rmd)
 
 **Highlights:**
 - Arbeiten mit Listen & Dataframes
