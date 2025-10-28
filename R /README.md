@@ -1,6 +1,6 @@
 # R Data Portfolio
 
-![Verbrauchs- und Leistungsanalyse](R/Paarweise_Zusammenhaenge_mpg_hp_wt_qsec.png)  
+![Verbrauchs- und Leistungsanalyse](Paarweise_Zusammenhaenge_mpg_hp_wt_qsec.png)  
 *Visualisierung: Paarweise Fahrzeugkennzahlen (mpg, hp, wt, qsec)*
 
 ---
