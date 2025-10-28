@@ -1,0 +1,219 @@
+---
+title: "Warpbreaks-Analyse"
+author: "Janka Schultze"
+date: "2025-07-10"
+output:
+  html_document:
+    df_print: paged
+---
+<br>
+**Beschreibung:**  
+Der `warpbreaks`-Datensatz enthält experimentelle Daten zur Anzahl der Fadenbrüche in Webstühlen, die mit unterschiedlichen Wolltypen (wool) und verschiedenen Spannungsstufen (tension) betrieben wurden. Wir untersuchen den Einflusses von Wolltyp und Spannung auf die Fadenbrüche und identifizieren potenzielle Interaktionen zwischen beiden Faktoren.  
+
+**Analysen:**  
+- Überblick und Datenstruktur  
+- Häufigkeitsverteilung der Wolltypen und Spannungskategorien  
+- Kreuztabelle (Wolltyp × Spannung)  
+- Deskriptive Statistiken der Fadenbrüche (Lagemaße, Streuung)  
+- Gruppenvergleiche nach Wolltyp und Spannung  
+- Visualisierungen der Fadenbrüche:  
+  - Boxplots nach Wolltyp  
+  - Boxplots nach Spannung  
+  - Interaktion: Wolltyp × Spannung  
+  - Mittelwertdiagramm mit Fehlerbalken  
+- Explorative Fragestellungen:  
+  - Welcher Wolltyp zeigt im Mittel die meisten bzw. wenigsten Fadenbrüche?  
+  - Hat die Spannung einen signifikanten Einfluss auf die Bruchhäufigkeit?  
+  - Gibt es eine Wechselwirkung zwischen Wolltyp und Spannung?  
+
+**Ziel:**  
+Quantitative und visuelle Analyse der Produktionsdaten, um Unterschiede und Einflussfaktoren der Fadenbrüche in Abhängigkeit von Material und Maschinenspannung zu identifizieren.
+
+<br>
+
+#### Bibliotheken
+```{r}
+# Installation falls erforderlich
+packages <- c("tidyverse")
+installed <- packages %in% rownames(installed.packages())
+if (any(!installed)) install.packages(packages[!installed])
+
+library(tidyverse)
+```
+<br>
+
+#### Überblick über den Datensatz
+```{r}
+# Zeige die ersten Zeilen
+head(warpbreaks)
+
+# Struktur und Variablen prüfen
+str(warpbreaks)
+```
+<br>
+
+#### Häufigkeitsverteilungen
+```{r}
+# Häufigkeitstabelle der Wolltypen
+wool_tabelle <- table(warpbreaks$wool)
+print(wool_tabelle)
+
+# dplyr-Alternative
+warpbreaks %>% count(wool)
+```
+<br>
+
+#### Kreuztabellen
+
+```{r}
+# Kreuztabelle Wolle und Spannung
+wool_tension_tbl <- table(warpbreaks$wool, warpbreaks$tension)
+print(wool_tension_tbl)
+
+warpbreaks %>% count(wool, tension)
+
+# Zusammenfassung der Daten
+summary(warpbreaks)
+```
+<br>
+
+#### Lage- und Streuungsmaße der Fadenbrüche
+```{r}
+# Lage- und Streuungsmaße der Fadenbrüche
+mean(warpbreaks$breaks)
+median(warpbreaks$breaks)
+sd(warpbreaks$breaks)
+var(warpbreaks$breaks)
+range(warpbreaks$breaks)
+
+# Gruppierte Lagemaße nach Wolltyp
+warpbreaks %>%
+  group_by(wool) %>%
+  summarise(
+    mean_brk = mean(breaks),
+    median_brk = median(breaks),
+    std_brk = sd(breaks)
+  )
+
+# Gruppierte Lagemaße nach Wolltyp und Spannung
+kombi <- warpbreaks %>%
+  group_by(wool, tension) %>%
+  summarise(
+    mean_break = mean(breaks),
+    std_break = sd(breaks)
+  )
+print(kombi)
+
+# Alternative mit aggregate (Basis R)
+aggregate(breaks ~ wool + tension, data = warpbreaks, FUN = mean)
+aggregate(breaks ~ wool + tension, data = warpbreaks, FUN = sd)
+```
+<br>
+
+#### Visualisierungen
+
+<br>
+
+```{r}
+# Boxplot nach Wolltyp
+
+ggplot(warpbreaks, aes(x = wool, y = breaks, fill = wool)) +
+geom_boxplot() +
+labs(
+title = "Fadenbrüche nach Wolltyp",
+x = "Wolltyp",
+y = "Anzahl der Fadenbrüche"
+) +
+theme_minimal() +
+theme(legend.position = "none")
+
+```
+
+<br>
+
+```{r}
+# Boxplot nach Spannung
+
+ggplot(warpbreaks, aes(x = tension, y = breaks, fill = tension)) +
+geom_boxplot() +
+labs(
+title = "Fadenbrüche nach Spannung",
+x = "Spannung (niedrig, mittel, hoch)",
+y = "Anzahl der Fadenbrüche"
+) +
+theme_minimal() +
+theme(legend.position = "none")
+
+```
+
+<br>
+
+```{r}
+# Kombinierter Boxplot: Wolltyp × Spannung 
+
+boxplot(breaks ~ wool * tension, data = warpbreaks,
+        col = c('lightgreen', 'lightblue'),
+        main = 'Boxplot: Fadenbrüche nach Wolltyp und Spannung',
+        xlab = 'Kombination Wolltyp und Spannung',
+        ylab = 'Anzahl der Fadenbrüche')
+
+```
+
+
+<br>
+
+```{r}
+# Mittelwerte mit Fehlerbalken
+
+warpbreaks %>%
+group_by(wool, tension) %>%
+summarise(
+mean_breaks = mean(breaks),
+sd_breaks = sd(breaks)
+) %>%
+ggplot(aes(x = tension, y = mean_breaks, color = wool, group = wool)) +
+geom_line(size = 1.2) +
+geom_point(size = 3) +
+geom_errorbar(aes(ymin = mean_breaks - sd_breaks, ymax = mean_breaks + sd_breaks), width = 0.1) +
+labs(
+title = "Mittlere Fadenbrüche mit Standardabweichung",
+x = "Spannung",
+y = "Mittlere Anzahl der Fadenbrüche",
+color = "Wolltyp"
+) +
+theme_minimal()
+
+```
+
+<br>
+
+```{r}
+# Identifikation der Gruppe mit den wenigsten Fadenbrüchen
+
+warpbreaks %>%
+group_by(wool, tension) %>%
+summarise(mean_breaks = mean(breaks)) %>%
+arrange(mean_breaks)
+```
+
+<br>
+
+### Zusammenfassung & Insights
+Die Analyse des Datensatzes warpbreaks zeigt deutliche Unterschiede im Verhalten der beiden Wolltypen und der Spannungsstufen:  
+
+Wolltyp:  
+Wolltyp B führt insgesamt zu weniger Fadenbrüchen als Typ A.
+Die Unterschiede zwischen den Wolltypen sind besonders bei hoher Spannung ausgeprägt.
+Spannung:
+Eine niedrige Spannung führt tendenziell zu mehr Fadenbrüchen.
+Bei hoher Spannung (H) sinkt die Bruchzahl deutlich — möglicherweise durch stabilere Fadenspannung oder bessere Materialausrichtung.  
+
+Interaktionseffekt:
+Der Effekt der Spannung ist nicht unabhängig vom Wolltyp:
+Bei Wolle A nimmt die Bruchzahl mit steigender Spannung stärker ab.
+Wolle B bleibt vergleichsweise stabil.
+→ Es besteht eine Interaktion zwischen Material und Maschineneinstellung.
+
+Gesamtfazit:  
+Die Kombination aus Wolle B und hoher Spannung (H) liefert die geringste Bruchrate und damit die effizienteste Produktionseinstellung.  
+Visuell bestätigt sich dieser Befund in Boxplots und Mittelwertdiagrammen mit klar getrennten Gruppenmustern.
