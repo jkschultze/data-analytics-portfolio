@@ -1,6 +1,6 @@
 # R Data Portfolio
 
-![Verbrauchs- und Leistungsanalyse](R/paarweise-zusammenhaenge-mpg_hp_wt_qsec.png)  
+![Verbrauchs- und Leistungsanalyse](paarweise-zusammenhaenge-mpg_hp_wt_qsec.png)  
 *Auszug aus der Verbrauchs- und Leistungsanalyse mit dem Datensatz mtcars*
 
 ---
