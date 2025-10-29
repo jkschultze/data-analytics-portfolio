@@ -20,8 +20,8 @@
 **Beschreibung:**  
 Analyse technischer Fahrzeugkennzahlen wie Motorleistung, Gewicht und Kraftstoffverbrauch bei 32 Automodellen.
 
-**Markdown File:** [verbrauchs-und-leistungsanalyse-mtcars.md](./verbrauchs-und-leistungsanalyse-mtcars.md)  
-**R Script:** [verbrauchs-und-leistungsanalyse-mtcars.R](./verbrauchs-und-leistungsanalyse-mtcars.R)
+**Markdown File:** [verbrauchs-und-leistungsanalyse-mtcars.md](verbrauchs-und-leistungsanalyse-mtcars.md)  
+**R Script:** [verbrauchs-und-leistungsanalyse-mtcars.R](verbrauchs-und-leistungsanalyse-mtcars.R)
 
 **Highlights:**
 - Scatterplots und Korrelationsanalyse
