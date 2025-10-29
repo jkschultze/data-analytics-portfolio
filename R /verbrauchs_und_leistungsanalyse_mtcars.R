@@ -1,35 +1,3 @@
----
-title: "Verbrauchs- und Leistungsanalyse: mtcars"
-author: "Janka Schultze"
-date: "2025-07-07"
-output:
-  html_document:
-    df_print: paged
----
-<br>
-**Beschreibung:** Der Datensatz `mtcars` enthält Daten zu 32 Autos, u.a. Zylinderanzahl (cyl), Motorleistung (hp), Kraftstoffverbrauch (mpg), Gewicht (wt), Beschleunigungszeit (qsec) und Getriebeart (am).  
-
-In dieser Analyse werden folgende Fragestellungen untersucht:
-
-- Verteilung der Zylinderanzahl  
-- Lagemaße (Mittelwert, Median, Modus) und Streuungsmaße (Varianz, Standardabweichung, Spannweite, IQR) des Kraftstoffverbrauchs  
-- Kreuztabellen zur Beziehung zwischen Zylinderanzahl und Getriebeart  
-- Visualisierung der Zylinderverteilung (Balkendiagramm)  
-- Boxplot des Kraftstoffverbrauchs nach Zylinderanzahl  
-- Boxplot des Kraftstoffverbrauchs nach Getriebeart (Automatik vs. Schaltung)  
-- Scatterplot von Verbrauch vs. Gewicht, farblich nach Zylinderanzahl   
-- Scatterplot von Verbrauch vs. Gewicht facettiert nach Getriebeart  
-- Zusammenhang von Verbrauch und Motorleistung  
-- Paarweise Zusammenhänge zwischen Kraftstoffverbrauch (mpg),
-Motorleistung (hp), Gewicht (wt) und Beschleunigung (qsec)
-- Korrelationsmatrix (Heatmap) mit Kraftstoffverbrauch, Motorleistung, Gewicht und Beschleunigung
- 
-
-**Ziel:** Identifikation von Mustern, Zusammenhängen und Einflussfaktoren auf den Kraftstoffverbrauch, um die Daten explorativ, statistisch und visuell professionell zu analysieren.  
-<br>
-
-#### Bibliotheken
-```{r}
 # Prüfe und installiere benötigte Pakete automatisch
 packages <- c("tidyverse", "GGally")
 
@@ -42,37 +10,22 @@ if (any(!installed)) {
 library(tidyverse)
 library(GGally)
 
-```
-<br>
-
-#### Überblick über den Datensatz
-```{r}
 # Zeige die ersten Zeilen
 head(mtcars)
 
 # Struktur und Variablen prüfen
 str(mtcars)
-```
-<br>
 
-#### Häufigkeitsverteilungen
-```{r}
 # Häufigkeitstabelle der Zylinderanzahl (Base R)
 zylinder_tabelle <- table(mtcars$cyl)
 print(zylinder_tabelle)
 
 # Relative Häufigkeit in Prozent
-
 prop.table(zylinder_tabelle) * 100
 
 # Alternative mit dplyr
-
 mtcars %>% count(cyl) %>% mutate(anteil = n / sum(n) * 100)
-```
-<br>
 
-#### Lagemaße des Kraftstoffverbrauchs
-```{r}
 # Mittelwert und Median berechnen (mpg)
 mean(mtcars$mpg)
 median(mtcars$mpg)
@@ -80,11 +33,7 @@ median(mtcars$mpg)
 # Modus berechnen (häufigster Wert)
 modus_tabelle <- table(mtcars$mpg)
 names(modus_tabelle)[which.max(modus_tabelle)]
-```
-<br>
 
-#### Streuungsmaße
-```{r}
 # Varianz
 var(mtcars$mpg)
 
@@ -100,11 +49,7 @@ diff(range(mtcars$mpg))
 # Quantile und Interquartilsabstand
 quantile(mtcars$mpg)
 IQR(mtcars$mpg)
-```
-<br>
 
-#### Kreuztabellen
-```{r}
 # Beziehung zwischen Zylinderanzahl und Getriebeart
 
 # Kreuztabelle von Zylindern und Getriebetyp
@@ -113,11 +58,7 @@ print(kreuztabelle)
 
 # Alternative mit dplyr
 mtcars %>% count(cyl, am)
-```
-<br>
 
-#### Visualisierungen
-```{r}
 # Balkendiagramm: Häufigkeit der Zylinderanzahl
 ggplot(mtcars, aes(x = factor(cyl))) +
   geom_bar(fill = "steelblue") +
@@ -127,12 +68,7 @@ ggplot(mtcars, aes(x = factor(cyl))) +
     y = "Anzahl der Autos"
   ) +
   theme_minimal()
-```
 
-<br>
-
-
-```{r}
 # Boxplot: Kraftstoffverbrauch (mpg) nach Zylinderanzahl
 ggplot(mtcars, aes(x = factor(cyl), y = mpg, fill = factor(cyl))) +
   geom_boxplot() +
@@ -143,11 +79,7 @@ ggplot(mtcars, aes(x = factor(cyl), y = mpg, fill = factor(cyl))) +
   ) +
   theme_minimal() +
   theme(legend.position = "none")
-```
 
-<br>
-
-```{r}
 # Boxplot: Kraftstoffverbrauch nach Getriebeart
 ggplot(mtcars, aes(x = factor(am), y = mpg, fill = factor(am))) +
   geom_boxplot() +
@@ -159,11 +91,6 @@ ggplot(mtcars, aes(x = factor(am), y = mpg, fill = factor(am))) +
   theme_minimal() +
   theme(legend.position = "none")
 
-```
-
-<br>
-
-```{r}
 # Scatterplot: mpg vs. Gewicht (wt), farblich nach Zylinder
 ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
   geom_point(size = 3) +
@@ -174,12 +101,7 @@ ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
     color = "Zylinder"
   ) + 
   theme_minimal()
-```
 
-<br>
-
-
-```{r}
 # Scatterplot mit Facetten nach Getriebeart (am)
 ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
   geom_point(size = 3) +
@@ -191,10 +113,7 @@ ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
     color = "Zylinder"
   ) +
   theme_minimal()
-```
 
-<br>
-```{r}
 # Scatterplot: Motorleistung (hp) vs. Verbrauch (mpg)
 ggplot(mtcars, aes(x = hp, y = mpg, color = factor(cyl))) +
   geom_point(size = 3) +
@@ -207,27 +126,18 @@ ggplot(mtcars, aes(x = hp, y = mpg, color = factor(cyl))) +
   ) +
   theme_minimal()
 
-```
-
-<br>
-```{r}
 # Gewicht vs. Beschleunigung (Viertelmeile, qsec)
 ggplot(mtcars, aes(x = wt, y = qsec, color = factor(cyl))) +
-geom_point(size = 3) +
-geom_smooth(method = "lm", se = FALSE, linetype = "dotted") +
-labs(
-title = "Beschleunigung (Viertelmeile) vs. Gewicht",
-x = "Gewicht (1000 lbs)",
-y = "Beschleunigungszeit qsec",
-color = "Zylinder"
-) +
-theme_minimal()
-```
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE, linetype = "dotted") +
+  labs(
+    title = "Beschleunigung (Viertelmeile) vs. Gewicht",
+    x = "Gewicht (1000 lbs)",
+    y = "Beschleunigungszeit qsec",
+    color = "Zylinder"
+  ) +
+  theme_minimal()
 
-
-<br>
-
-```{r}
 library(ggplot2)
 library(dplyr)
 library(patchwork)
@@ -270,12 +180,6 @@ p4 <- ggplot(mtcars2, aes(x=hp, y=wt, color=cyl)) +
     title = "Paarweise Zusammenhänge zwischen Kraftstoffverbrauch (mpg),\nMotorleistung (hp), Gewicht (wt) und Beschleunigung (qsec)"
   )
 
-
-```
-
-<br>
-
-```{r}
 library(dplyr)
 library(ggplot2)
 library(reshape2)
@@ -310,50 +214,4 @@ ggplot(cor_long, aes(Var1, Var2, fill = value)) +
     y = NULL
   ) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
-
-```
-
-<br>
-
-### Zusammenfassung & Insights
-
-Die explorative Analyse des Datensatzes `mtcars` zeigt deutliche Muster und Zusammenhänge zwischen Verbrauch, Motorleistung, Gewicht, Zylinderzahl und Getriebeart.  
-
-**Zylinder und Verbrauch:**  
-- Fahrzeuge mit mehr Zylindern (6 oder 8) zeigen einen deutlich höheren Kraftstoffverbrauch als 4-Zylinder-Modelle.  
-- Die Varianz des Verbrauchs steigt mit der Zylinderzahl – große Motoren unterscheiden sich stärker in ihrer Effizienz.  
-
-**Gewicht und Verbrauch:**  
-- Zwischen Fahrzeuggewicht und Verbrauch besteht eine starke negative Korrelation: leichtere Autos verbrauchen weniger.  
-- Der Scatterplot zeigt eine klare Abnahme des mpg-Werts mit steigendem Gewicht – insbesondere bei 8-Zylinder-Autos.  
-
-**Motorleistung:**  
-- Höhere Motorleistung (hp) geht mit geringerem Kraftstoffverbrauch (mpg) einher.  
-- Die lineare Trendlinie bestätigt einen deutlichen negativen Zusammenhang.  
-- Leistungsstarke Fahrzeuge (über 200 PS) liegen fast ausschließlich im unteren Effizienzbereich (< 20 mpg).  
-
-**Beschleunigung:**  
-- Schwerere Fahrzeuge benötigen mehr Zeit für die Viertelmeile (qsec), was auf eine erwartbare negative Beziehung zwischen Gewicht und Beschleunigung hinweist.  
-- 4-Zylinder-Autos beschleunigen im Verhältnis zu ihrem Gewicht effizienter.  
-
-**Getriebearten:**  
-- Schaltgetriebene Fahrzeuge (am = 1) erreichen tendenziell bessere Verbrauchswerte als Automatikfahrzeuge.  
-- Besonders 4-Zylinder-Schaltwagen kombinieren niedrigen Verbrauch mit guter Beschleunigung.  
-
-**Korrelationen:**  
-- mpg korreliert stark negativ mit hp (Motorleistung) und wt (Gewicht).  
-- Zwischen hp und wt besteht eine positive Korrelation: leistungsstärkere Autos sind oft schwerer.  
-- qsec korreliert schwach negativ mit wt, was eine längere Beschleunigungszeit bei höherem Gewicht bestätigt.  
-
-**Zylinder und Getriebe:**  
-- 8-Zylinder-Modelle sind überwiegend mit Automatik ausgestattet, während 4-Zylinder häufiger mit Schaltgetriebe vorkommen.  
-- Dies deutet auf unterschiedliche Fahrzeugsegmente hin: sportliche oder kompakte Modelle mit Schaltung vs. große, komfortorientierte Fahrzeuge mit Automatik.  
-
-**Gesamtfazit:**  
-Der Kraftstoffverbrauch wird im Wesentlichen durch diese drei Faktoren bestimmt. Die Variablen sind stark miteinander verknüpft und bilden die Grundlage für eine effiziente Fahrzeugklassifikation:  
-- Motorgröße und Leistung  
-- Fahrzeuggewicht  
-- Getriebeart   
-
- 
 

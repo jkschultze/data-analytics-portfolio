@@ -1,34 +1,7 @@
----
-title: "Finnland Wetter 2017: Monatsstatistiken und Trends"
-author: "Janka Schultze"
-date: "2025-07-28"
-output:
-  html_document:
-    df_print: paged
----
- <br>
- 
- **Beschreibung:**  
-Wie verhalten sich Wetter und Schnee in Finnland über ein Jahr hinweg?
-Dieser Datensatz dokumentiert tägliche Temperaturen, Niederschlag und Schneehöhen für 2017. Mit aggregierten Monatswerten, Trendlinien und Visualisierungen werden saisonale Muster und Extreme erkennbar. 
-
-**Ziel:**  
-Es sollen monatliche Trends und Muster bei Temperatur, Niederschlag und Schneehöhe identifiziert werden.  
-Zusätzlich werden aussagekräftige Visualisierungen erstellt, um saisonale Unterschiede zu erkennen.
-
-<br>
-
-#### Bibliotheken
-```{r}
-#### Bibliotheken
+# Bibliotheken
 library(tidyverse)
 
-```
-
-<br>
-
-#### Datensatz einlesen und Überblick
-```{r}
+# Datensatz einlesen und Überblick
 wetter_finnland <- read.csv('data/finnland-weather-2017.csv', header = TRUE)
 
 # Erste Zeilen
@@ -40,12 +13,7 @@ str(wetter_finnland)
 # Zusammenfassung
 summary(wetter_finnland)
 
-```
-
-<br>
-
-#### Datenbereinigung & lesbare Spaltennamen
-```{r}
+# Datenbereinigung & lesbare Spaltennamen
 wetter_finnland_leserlich <- wetter_finnland %>% 
   rename(
     Jahr = Year,
@@ -65,12 +33,7 @@ wetter_finnland_bereinigt <- wetter_finnland_leserlich %>%
     `Schneehöhe (cm)` = as.numeric(ifelse(`Schneehöhe (cm)` %in% c(-1, ''), NA, `Schneehöhe (cm)`))
   )
 
-```
-
-<br>
-
-#### Monatliche Aggregation
-```{r}
+# Monatliche Aggregation
 wetter_finnland_Monate <- wetter_finnland_bereinigt %>% 
   group_by(Monat) %>% 
   summarise(
@@ -84,13 +47,8 @@ wetter_finnland_Monate <- wetter_finnland_bereinigt %>%
 
 wetter_finnland_Monate
 
-```
+# Visualisierungen
 
-
-<br>
-
-#### Visualisierungen
-```{r}
 # 1. Durchschnittstemperatur pro Monat
 ggplot(wetter_finnland_Monate, aes(x = Monat, y = Temperatur_Mittel)) +
   geom_line(color = "tomato", size = 1.2) +
@@ -101,10 +59,7 @@ ggplot(wetter_finnland_Monate, aes(x = Monat, y = Temperatur_Mittel)) +
     y = 'Temperatur (°C)'
   ) +
   theme_minimal()
-```
 
-
-```{r}
 # 2. Gesamtniederschlag pro Monat
 ggplot(wetter_finnland_Monate, aes(x = Monat, y = Niederschlag_Gesamt)) +
   geom_col(fill = "steelblue") +
@@ -114,10 +69,7 @@ ggplot(wetter_finnland_Monate, aes(x = Monat, y = Niederschlag_Gesamt)) +
     y = 'Niederschlag (mm)'
   ) +
   theme_minimal()
-```
 
-
-```{r}
 # 3. Durchschnittliche Schneehöhe pro Monat
 ggplot(wetter_finnland_Monate, aes(x = Monat, y = Schneehöhe_Mittel)) +
   geom_col(fill = "lightblue") +
@@ -127,10 +79,7 @@ ggplot(wetter_finnland_Monate, aes(x = Monat, y = Schneehöhe_Mittel)) +
     y = 'Schneehöhe (cm)'
   ) +
   theme_minimal()
-```
 
-
-```{r}
 # 4. Tage mit Schneedecke pro Monat
 ggplot(wetter_finnland_Monate, aes(x = Monat, y = Tage_Schnee)) +
   geom_col(fill = "darkblue") +
@@ -140,17 +89,3 @@ ggplot(wetter_finnland_Monate, aes(x = Monat, y = Tage_Schnee)) +
     y = 'Tage'
   ) +
   theme_minimal()
-
-```
-
-<br>
-
-### Insights & Interpretation
-
-Saisonale Temperaturen: Wintermonate (Dezember–Februar) am kältesten, Sommermonate (Juni–August) am wärmsten.  
-
-Niederschlag: Höchster Gesamtniederschlag im Sommer, geringe Werte im Winter.  
-
-Schneedecke: Schneehöhe und Anzahl der Schneetage im Winter am höchsten, ab März deutlich abnehmend.  
-
-Trends: Klare saisonale Schwankungen, die Temperaturen, Schneehöhe und Niederschlag stark beeinflussen.  

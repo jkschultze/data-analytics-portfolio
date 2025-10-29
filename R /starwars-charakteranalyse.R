@@ -1,41 +1,15 @@
----
-title: "Data Wars: Eine Analyse der Starwars-Charaktere"
-author: "Janka Schultze"
-date: "2025-07-22"
-output:
-  html_document:
-    df_print: paged
----
-<br>
-**Beschreibung:**  
-Wir erkunden den starwars-Datensatz aus dem R-Paket dplyr und beleuchten die Charaktere des Star Wars Universums. Untersucht werden Körpergröße, Gewicht, Spezies, Geschlecht, Haar- und Hautfarbe, Heimatwelt sowie Geburtsjahr, um Muster, Besonderheiten und Zusammenhänge zwischen den Figuren sichtbar zu machen.
-
-**Ziel:**  
-Zentrale Charaktermerkmale sollen untersucht werden, um statistische Zusammenhänge zu identifizieren und visuell aufzubereiten.  
-Unterschiede zwischen Geschlechtern, Spezies und Planeten werden analysiert, ebenso wie Beziehungen zwischen Größe, Masse, BMI und anderen Variablen.
-
-<br>
-
-#### Bibliotheken
-```{r}
+# Bibliotheken
 library(tidyverse)
 library(forcats)
-```
 
-<br>
-
-#### Überblick über den Datensatz
-```{r}
+# Überblick über den Datensatz
 # Überblick über die Struktur des Starwars-Datensatzes
 glimpse(starwars)
 
 # Erste 6 Zeilen und Anzahl der Spalten anzeigen
 head(starwars)
-```
-<br>
 
-#### Basis-Statistiken
-```{r}
+# Basis-Statistiken
 # Anzahl der Charaktere pro Spezies
 starwars %>% 
   filter(!is.na(species)) %>% 
@@ -54,11 +28,7 @@ starwars %>%
 # Anzahl fehlender Werte
 sapply(starwars, function(x) sum(is.na(x)))
 
-```
-<br>
-
-#### BMI Berechnung
-```{r}
+# BMI Berechnung
 starwars_bmi <- starwars %>%
   filter(!is.na(mass) & !is.na(height)) %>%
   mutate(bmi = mass / (height/100)^2)
@@ -66,21 +36,15 @@ starwars_bmi <- starwars %>%
 # Top 10 Charaktere nach BMI
 starwars_bmi %>% arrange(desc(bmi)) %>% select(name, mass, height, bmi) %>% head(10)
 
-```
-<br>
+# Visualisierungen
 
-#### Visualisierungen
-```{r}
 # 1. Anzahl der Charaktere pro Spezies
 starwars %>% 
   filter(!is.na(species)) %>% 
   ggplot(aes(y = fct_infreq(species))) +
   geom_bar(fill = 'steelblue') +
   labs(title = 'Anzahl der Charaktere pro Spezies', y = 'Spezies', x = 'Anzahl')
-```
-<br>
 
-```{r}
 # 2. Scatterplot: Masse vs. Größe nach Geschlecht
 starwars %>% 
   filter(!is.na(height) & !is.na(mass) & !is.na(gender)) %>%
@@ -88,29 +52,20 @@ starwars %>%
   geom_point(size = 3, alpha = 0.7) +
   labs(title = 'Masse vs. Größe nach Geschlecht', x = 'Größe (cm)', y = 'Masse (kg)')
 
-```
-<br>
-```{r}
 # 3. Histogramm: Alter (birth_year)
 starwars %>% 
   filter(!is.na(birth_year)) %>%
   ggplot(aes(x = birth_year)) +
   geom_histogram(binwidth = 50, fill = 'lightblue', color = 'black') +
   labs(title = 'Verteilung des Geburtsjahres', x = 'Geburtsjahr', y = 'Anzahl')
-```
 
-<br>
-```{r}
 # 4. Balkendiagramm: Geschlechterverteilung
 starwars %>% 
   filter(!is.na(gender)) %>%
   ggplot(aes(x = gender)) +
   geom_bar(fill = 'salmon') +
   labs(title = 'Geschlechterverteilung', x = 'Geschlecht', y = 'Anzahl')
-```
 
-<br>
-```{r}
 # 5. Top 10 Heimatwelten
 starwars %>% 
   filter(!is.na(homeworld)) %>%
@@ -120,10 +75,7 @@ starwars %>%
   geom_col(fill = 'lightgreen') +
   coord_flip() +
   labs(title = 'Top 10 Heimatwelten nach Anzahl der Charaktere', x = 'Heimatwelt', y = 'Anzahl')
-```
-<br>
 
-```{r}
 # 6. BMI-Boxplot nach Geschlecht
 starwars_bmi %>%
   filter(!is.na(gender)) %>%
@@ -132,10 +84,7 @@ starwars_bmi %>%
   labs(title = 'BMI-Verteilung nach Geschlecht', x = 'Geschlecht', y = 'BMI') +
   theme_minimal() +
   theme(legend.position = 'none')
-```
 
-<br>
-```{r}
 # 7. Scatterplot: Masse vs. Größe facettiert nach Spezies
 starwars %>%
   filter(!is.na(height) & !is.na(mass) & !is.na(species)) %>%
@@ -143,20 +92,3 @@ starwars %>%
   geom_point(alpha = 0.7) +
   facet_wrap(~ species) +
   labs(title = 'Masse vs. Größe nach Spezies', x = 'Größe (cm)', y = 'Masse (kg)')
-
-```
-<br>
-
-### Insights
-
-Körpergröße & Masse: Charaktere der Spezies „Droid“ sind oft kleiner und leichter; Twi‘lek und Wookiee sind groß und schwer.  
-
-BMI: Stark variierende BMI-Werte zwischen Spezies; Droiden haben extrem niedrige Werte.  
-
-Geschlecht: Weniger weibliche Charaktere; Frauen sind im Durchschnitt kleiner und leichter.  
-
-Heimatwelt: Correlates mit Spezies – viele Charaktere stammen von Planeten mit mehreren bekannten Individuen (z.B. Naboo, Tatooine).  
-
-Alter: Große Streuung im Geburtsjahr; einige Charaktere sehr alt (Jahrhundertbereiche).  
-
-Zusammenhänge: Masse korreliert positiv mit Größe; BMI ermöglicht Vergleich zwischen Spezies unabhängig von Größe.  

@@ -1,7 +1,7 @@
 # R Data Portfolio
 
-![Verbrauchs- und Leistungsanalyse](Paarweise_Zusammenhaenge_mpg_hp_wt_qsec.png)  
-*Visualisierung: Paarweise Fahrzeugkennzahlen (mpg, hp, wt, qsec)*
+![Verbrauchs- und Leistungsanalyse](R/paarweise-zusammenhaenge-mpg_hp_wt_qsec.png)  
+*Auszug aus der Verbrauchs- und Leistungsanalyse mit dem Datensatz mtcars*
 
 ---
 
@@ -20,7 +20,8 @@
 **Beschreibung:**  
 Analyse technischer Fahrzeugkennzahlen wie Motorleistung, Gewicht und Kraftstoffverbrauch bei 32 Automodellen.
 
-**Report:** [Verbrauchs-und-Leistungsanalyse-mtcars.html](Verbrauchs-und-Leistungsanalyse-mtcars.html)
+**Markdown File:** [verbrauchs-und-leistungsanalyse-mtcars.md](verbrauchs-und-leistungsanalyse-mtcars.md)  
+**R Script:** [verbrauchs-und-leistungsanalyse-mtcars.R](verbrauchs-und-leistungsanalyse-mtcars.R)
 
 **Highlights:**
 - Scatterplots und Korrelationsanalyse
@@ -33,7 +34,9 @@ Analyse technischer Fahrzeugkennzahlen wie Motorleistung, Gewicht und Kraftstoff
 **Beschreibung:**  
 Untersuchung von Wetterdaten (New York) und CO2-Aufnahmeraten unterschiedlicher Pflanzentypen.
 
-**Report:** [Umweltdatenanalyse-airquality-und-CO2.html](Umweltdatenanalyse-airquality-und-CO2.html)
+**Markdown File:** [umweltdatenanalyse-airquality-und-co2.md](umweltdatenanalyse-airquality-und-co2.md)
+
+**R Script:** [umweltdatenanalyse-airquality-und-co2.R](umweltdatenanalyse-airquality-und-co2.R)
 
 **Highlights:**
 - Temperatur-Histogramme
@@ -46,7 +49,8 @@ Untersuchung von Wetterdaten (New York) und CO2-Aufnahmeraten unterschiedlicher 
 **Beschreibung:**  
 Profilanalyse ikonischer Star-Wars-Charaktere: Größe, Masse, Geschlecht, Spezies, Herkunftsplanet, BMI und mehr.
 
-**Report:** [Starwars-Charakteranalyse.html](Starwars-Charakteranalyse.html)
+**Markdown File:** [starwars-charakteranalyse.md](starwars-charakteranalyse.md)  
+**R Script:** [starwars-charakteranalyse.R](starwars-charakteranalyse.R)
 
 **Highlights:**
 - Größe-vs-Masse Scatter nach Geschlecht
@@ -60,7 +64,8 @@ Profilanalyse ikonischer Star-Wars-Charaktere: Größe, Masse, Geschlecht, Spezi
 **Beschreibung:**  
 Vergleich von Kükengewichten je Futterart zur Untersuchung möglicher Wachstumsunterschiede.
 
-**Report:** [chickwts_Futteranalyse.html](chickwts_Futteranalyse.html)
+**Markdown File:** [chickwts-futteranalyse.md](chickwts-futteranalyse.md)  
+**R Script:** [chickwts-futteranalyse.R](chickwts-futteranalyse.R)
 
 **Highlights:**
 - Boxplots & Violinplots
@@ -73,7 +78,8 @@ Vergleich von Kükengewichten je Futterart zur Untersuchung möglicher Wachstums
 **Beschreibung:**  
 Auswertung täglicher Klimadaten in Finnland 2017: Temperatur, Niederschlag, Schneehöhe & Saisonalität.
 
-**Report:** [Finnland_Wetter_2017_Monatsstatistiken_und_Trends.html](Finnland_Wetter_2017_Monatsstatistiken_und_Trends.html)
+**Markdown File:** [wetter-finnland-2017.md](wetter-finnland-2017.md)  
+**R Script:** [wetter-finnland-2017.R](wetter-finnland-2017.R)
 
 **Highlights:**
 - Temperatur-Monatsmittel
@@ -86,7 +92,8 @@ Auswertung täglicher Klimadaten in Finnland 2017: Temperatur, Niederschlag, Sch
 **Beschreibung:**  
 Untersuchung des Bruchverhaltens von Webfäden unter variierenden Spannungen und mit zwei Wolltypen.
 
-**Report:** [Warpbreaks-Analyse.html](Warpbreaks-Analyse.html)
+**Markdown File:** [warpbreaks-fadenbruchanalyse.md](warpbreaks-fadenbruchanalyse.md)  
+**R Script:** [warpbreaks-fadenbruchanalyse.R](warpbreaks-fadenbruchanalyse.R)
 
 **Highlights:**
 - Boxplots nach Wolltyp & Spannung
@@ -99,7 +106,8 @@ Untersuchung des Bruchverhaltens von Webfäden unter variierenden Spannungen und
 **Beschreibung:**  
 Grundlagenübungen zu Datentypen, Datenstrukturen, Kontrollfluss, Funktionen, Statistik, Datenimport & Visualisierung.
 
-**Report:** [basics.Rmd](basics.Rmd)
+**Markdown File:** [r-grundlagen.md](r-grundlagen.md)  
+**R Script:** [r-grundlagen.R](r-grundlagen.R)
 
 **Highlights:**
 - Arbeiten mit Listen & Dataframes

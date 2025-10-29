@@ -243,7 +243,7 @@ ggplot(mtcars, aes(x = factor(cyl))) +
   theme_minimal()
 ```
 
-![](Verbrauchs-und-Leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-7-1.png)
+![](figures/verbrauchs-und-leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-7-1.png)
 
 <br>
 
@@ -260,7 +260,7 @@ ggplot(mtcars, aes(x = factor(cyl), y = mpg, fill = factor(cyl))) +
   theme(legend.position = "none")
 ```
 
-![](Verbrauchs-und-Leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![](figures/verbrauchs-und-leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-8-1.png)
 
 <br>
 
@@ -277,7 +277,7 @@ ggplot(mtcars, aes(x = factor(am), y = mpg, fill = factor(am))) +
   theme(legend.position = "none")
 ```
 
-![](Verbrauchs-und-Leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![](figures/verbrauchs-und-leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-9-1.png)
 
 <br>
 
@@ -294,7 +294,7 @@ ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
   theme_minimal()
 ```
 
-![](Verbrauchs-und-Leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-10-1.png)
+![](figures/verbrauchs-und-leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-10-1.png)
 
 <br>
 
@@ -312,7 +312,7 @@ ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
   theme_minimal()
 ```
 
-![](Verbrauchs-und-Leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](figures/verbrauchs-und-leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-11-1.png)
 
 <br>
 
@@ -332,7 +332,7 @@ ggplot(mtcars, aes(x = hp, y = mpg, color = factor(cyl))) +
 
     ## `geom_smooth()` using formula = 'y ~ x'
 
-![](Verbrauchs-und-Leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-12-1.png)
+![](figures/verbrauchs-und-leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
 <br>
 
@@ -352,7 +352,7 @@ theme_minimal()
 
     ## `geom_smooth()` using formula = 'y ~ x'
 
-![](Verbrauchs-und-Leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-13-1.png)
+![](figures/verbrauchs-und-leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-13-1.png)
 
 <br>
 
@@ -400,7 +400,7 @@ p4 <- ggplot(mtcars2, aes(x=hp, y=wt, color=cyl)) +
   )
 ```
 
-![](Verbrauchs-und-Leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-14-1.png)
+![](figures/verbrauchs-und-leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-14-1.png)
 
 <br>
 
@@ -450,7 +450,7 @@ ggplot(cor_long, aes(Var1, Var2, fill = value)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-![](Verbrauchs-und-Leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-15-1.png)
+![](figures/verbrauchs-und-leistungsanalyse-mtcars_files/figure-markdown_github/unnamed-chunk-15-1.png)
 
 <br>
 

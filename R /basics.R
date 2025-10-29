@@ -1,4 +1,3 @@
-```{r} 
 # ----------------------------------------
 # R Grundlagen und Datenstrukturen
 # Autor: Janka Schultze
@@ -110,22 +109,22 @@ print(ist_gerade(4))  # TRUE
 #  Vektor-Zusammenfassung (optionale Ausgabe von Mittelwert / SD)
 vektor_info <- function(v, zeige_mittelwert = TRUE, zeige_sd = TRUE) {
   info <- c()
-
+  
   if (zeige_mittelwert) {
     mw <- mean(v)
     info <- c(info, paste('Mittelwert:', round(mw, 2)))
   }
-
+  
   if (zeige_sd) {
     sd_wert <- sd(v)
     info <- c(info, paste('Standardabweichung:', round(sd_wert, 2)))
   }
-
+  
   # Wenn nichts angezeigt werden soll, gib eine informative Meldung zurück
   if (length(info) == 0) {
     return('Keine Kennzahlen angefordert.')
   }
-
+  
   return(paste(info, collapse = ' | '))
 }
 
@@ -199,10 +198,10 @@ print(statistik_ergebnisse$Rohdaten)
 
 # Analysefunktion, gibt Liste mit Kennzahlen zurück
 deskriptive_analyse <- function(v) {
-
+  
   anzahl_bestanden <- sum(v <= 4.0)
   anzahl_nicht_bestanden <- sum(v > 4.0)
-
+  
   info_liste <- list(
     Anzahl_Noten = length(v),
     Mittelwert_Noten = mean(v),
@@ -211,7 +210,7 @@ deskriptive_analyse <- function(v) {
     Pruefung_bestanden = anzahl_bestanden,
     Pruefung_nicht_bestanden = anzahl_nicht_bestanden
   )
-
+  
   return(info_liste)
 }
 
@@ -594,11 +593,11 @@ if (exists('msleep')) {
     group_by(order, vore) %>%
     summarise(avg_sleep = mean(sleep_total, na.rm = TRUE)) %>%
     ungroup()
-
+  
   # Beispiel, wie man ggf. pivot_wider verwendet (falls benötigt)
   pivot_wide_sleep <- pivot_table_sleep %>%
     pivot_wider(names_from = vore, values_from = avg_sleep, values_fill = 0)
-
+  
   print(pivot_table_sleep)
   print(pivot_wide_sleep)
 } else {
@@ -619,21 +618,8 @@ if (exists('who')) {
     separate(schluessel, into = c('neu', 'diagnose', 'geschlecht_alter'), sep = '_') %>%
     select(-neu) %>%
     separate(geschlecht_alter, into = c('geschlecht', 'altersgruppe'), sep = 1)
-
+  
   glimpse(who_tidy)
 } else {
   message('Datensatz "who" nicht gefunden. Bitte Paket/Daten laden, wenn gewünscht.')
 }
-
-
-
-# --- Praktische Tipps & Häufige Fehler: ---
-
-# - Verwende immer '<-' für Zuweisungen (konsistenter Stil).
-# - Achtung bei Faktorvergleichen: nur sinnvoll, wenn Faktor geordnet ist.
-# - 'filter(Immatrikuliert = TRUE)' ist falsch: benutze '=='.
-# - arrange(asc = Alter) ist falsch: benutze arrange(Alter) oder arrange(desc(Alter)).
-# - Bei listen: keinesfalls '<-' innerhalb der list()-Konstruktion verwenden (Syntaxfehler).
-# - Immer na.rm = TRUE setzen, wenn NA in Aggregationen vorkommen können.
-
-```
