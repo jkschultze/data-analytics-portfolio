@@ -78,8 +78,8 @@ Vergleich von Kükengewichten je Futterart zur Untersuchung möglicher Wachstums
 **Beschreibung:**  
 Auswertung täglicher Klimadaten in Finnland 2017: Temperatur, Niederschlag, Schneehöhe & Saisonalität.
 
-**Markdown File:** [wetter-finnland-2017.md](wetter-finnland-2017.md)  
-**R Script:** [wetter-finnland-2017.R](wetter-finnland-2017.R)
+**Markdown File:** [finnland-wetter-2017-monatsstatistiken-und-trends.md](finnland-wetter-2017-monatsstatistiken-und-trends.md)  
+**R Script:** [finnland-wetter-2017-monatsstatistiken-und-trends.R](finnland-wetter-2017-monatsstatistiken-und-trends.R)
 
 **Highlights:**
 - Temperatur-Monatsmittel
@@ -92,8 +92,8 @@ Auswertung täglicher Klimadaten in Finnland 2017: Temperatur, Niederschlag, Sch
 **Beschreibung:**  
 Untersuchung des Bruchverhaltens von Webfäden unter variierenden Spannungen und mit zwei Wolltypen.
 
-**Markdown File:** [warpbreaks-fadenbruchanalyse.md](warpbreaks-fadenbruchanalyse.md)  
-**R Script:** [warpbreaks-fadenbruchanalyse.R](warpbreaks-fadenbruchanalyse.R)
+**Markdown File:** [warpbreaks-analyse.md](warpbreaks-analyse.md)  
+**R Script:** [warpbreaks-analyse.R](warpbreaks-analyse.R)
 
 **Highlights:**
 - Boxplots nach Wolltyp & Spannung
@@ -106,8 +106,7 @@ Untersuchung des Bruchverhaltens von Webfäden unter variierenden Spannungen und
 **Beschreibung:**  
 Grundlagenübungen zu Datentypen, Datenstrukturen, Kontrollfluss, Funktionen, Statistik, Datenimport & Visualisierung.
 
-**Markdown File:** [r-grundlagen.md](r-grundlagen.md)  
-**R Script:** [r-grundlagen.R](r-grundlagen.R)
+**R Script:** [basics.R](basics.R)
 
 **Highlights:**
 - Arbeiten mit Listen & Dataframes
