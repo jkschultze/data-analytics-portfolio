@@ -62,6 +62,17 @@ ggplot(chickwts_summary, aes(x = reorder(feed, -Durchschnittsgewicht), y = Durch
   theme_minimal() +
   theme(legend.position = "none")
 
+# Kumulative Häufigkeit / Empirische Verteilungsfunktion
+ggplot(chickwts, aes(x = weight, color = feed)) +
+  stat_ecdf(size = 1) +
+  labs(
+    title = 'Kumulative Gewichtsverteilung pro Futterart',
+    x = 'Gewicht (g)',
+    y = 'Kumulative Wahrscheinlichkeit'
+  ) +
+  theme_minimal()
+
+
 # Lineares Modell: Einfluss der Futterart
 # Referenzlevel für Futterart festlegen
 chickwts$feed <- relevel(chickwts$feed, ref = "horsebean")
