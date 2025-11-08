@@ -74,7 +74,7 @@ Tools & Technologien:
 - Power Query
 - GitHub
 
-[Power BI Datei](Power%20BI/Marktanalyse%20Immobilienpreise%20in%20Deutschland.pbix)
+[Power BI Datei](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/Marktanalyse%20Immobilienpreise%20in%20Deutschland.pbix)
 
 [Zum Report](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/Report%20Marktanalyse%20Immobilienpreise%20in%20Deutschland.pdf)
 
