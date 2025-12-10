@@ -8,7 +8,7 @@ Mein Schwerpunkt liegt auf Dashboard-Entwicklung und explorativer Datenanalyse.
 Ich arbeite mit folgenden Tools und Sprachen:
 - T-SQL auf Azure SQL Server
 - Power BI und Power Query
-- R (z. B. tidyverse, ggplot2)
+- R (z. B. tidyverse, ggplot2, Shiny für interaktive Dashboards)
 - Python (z. B. pandas, numpy, matplotlib, seaborn)
 - Excel
 
@@ -21,6 +21,7 @@ Die Projekte enthalten jeweils kurze Beschreibungen, verwendete Tools sowie ausg
 1. [US Superstore Analyse (2014–2017)](#us-superstore-analyse-2014–2017)
 2. [Marktanalyse: Immobilienpreise in Deutschland](#marktanalyse-immobilienpreise-in-deutschland)
 3. [R Data Portfolio](#r-data-portfolio)
+   - [Web Traffic Dashboard (Shiny App)](#web-traffic-dashboard-shiny-app)
    - [Mtcars: Verbrauchs- und Leistungsanalyse](#mtcars-verbrauchs--und-leistungsanalyse)
    - [Airquality & CO2: Umweltdatenanalyse](#airquality--co2-umweltdatenanalyse)
    - [Star Wars Charakteranalyse](#star-wars-charakteranalyse)
@@ -81,6 +82,26 @@ Tools & Technologien:
 ---
 
 ## R Data Portfolio
+### Web Traffic Dashboard (Shiny App)
+
+Live-Demo: [Web Traffic Dashboard](https://jkschultze.shinyapps.io/webtrafficdashboard/)
+
+**Beschreibung:** 
+Dieses Projekt analysiert Website-Traffic-Daten aus Kaggle. Die interaktive Shiny-App zeigt:
+
+- KPIs nach Segmenten (Clicks, CTR, Bounce Rate, Time Spent)
+- Scatterplots (Verweildauer vs. Clicks, Titel-Länge vs. Clicks, Wörter vs. Verweildauer)
+- Korrelationen zwischen numerischen Features
+- Rohdaten-Tabellen mit Filtermöglichkeiten
+
+**R Script:** [Shiny-App mit vollständiger Analyse](app.R) 
+
+**Projektordner** [README und Originaldatei](./WebTrafficDashboards/)
+
+
+
+---
+
 ### Mtcars: Verbrauchs- und Leistungsanalyse
 
 ![Visualisierung](visuals/Dashboard_mtcars_Leistungsanalyse.png)
@@ -203,6 +224,6 @@ Grundlagenübungen zu Datentypen, Datenstrukturen, Kontrollfluss, Funktionen, St
 - T-SQL (Azure SQL Server)
 - Power BI
 - Power Query
-- R (tidyverse, ggplot2)
+- R (tidyverse, ggplot2, Shiny)
 - GitHub
 - Markdown
