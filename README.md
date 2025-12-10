@@ -96,7 +96,7 @@ Dieses Projekt analysiert Website-Traffic-Daten aus Kaggle. Die interaktive Shin
 
 **R Script:** [Shiny-App mit vollständiger Analyse](app.R) 
 
-**Projektordner** [README und Originaldatei](WebTrafficDashboards/)
+**Projektordner** [README und Originaldatei](WebTrafficDashboards)
 
 
 
