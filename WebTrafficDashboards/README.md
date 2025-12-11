@@ -17,8 +17,8 @@ Die Analyse hilft Redaktionen dabei:
 - Datengetriebene Entscheidungen zu treffen  
 
 **Datensatz:** Website-Traffic und Kennzahlen zur Nutzerinteraktion
-- 2000 Records, 7 Features  
-- Informationen über Page Views, Session Duration, Bounce Rate, Traffic Source, Time on Page, Previous Visits, Conversion Rate  
+- ca. 10.000 Zeilen, 19 Spalten  
+- Informationen über Clicks, Impressions, Bounce Rate, Time Spent, Title Length, ...
 
 ---
 
@@ -66,8 +66,8 @@ Die Analyse umfasst folgende Bereiche:
 ---
 
 ## Datenquelle
-Website Traffic Dataset  
-Quelle: [Kaggle](https://www.kaggle.com/datasets/anthonytherrien/website-traffic)  
+Real Website Traffic Prediction  
+Quelle: [Kaggle](https://www.kaggle.com/datasets/madmanre/real-website-traffic-prediction/data)  
 
 ---
 

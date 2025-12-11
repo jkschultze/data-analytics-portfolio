@@ -94,9 +94,9 @@ Dieses Projekt analysiert Website-Traffic-Daten aus Kaggle. Die interaktive Shin
 - Korrelationen zwischen numerischen Features
 - Rohdaten-Tabellen mit Filtermöglichkeiten
 
-**R Script:** [Shiny-App mit vollständiger Analyse](app.R) 
+**R Script:** [Shiny-App mit vollständiger Analyse](WebTrafficDashboards/app.R) 
 
-**Projektordner** [README und Originaldatei](https://github.com/jkschultze/data-analytics-portfolio/tree/main/WebTrafficDashoboards)
+**Projektordner** [README und Originaldatei](https://github.com/jkschultze/data-analytics-portfolio/tree/main/WebTrafficDashboards)
 
 
 
