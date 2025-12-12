@@ -46,8 +46,8 @@ Ein Python-Script ruft wöchentlich Daten ab (Most Viewed und Most Shared) und s
 
 ## Dateien im Projekt
 - [Python Script](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/NYT_mostpopular_api.py) 
-- [Ordner mit historischen Daten] (https://github.com/jkschultze/data-analytics-portfolio/tree/main/WebTrafficDashboards/nyt_csvs)  
-- [Power-BI-Dashboard] (https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/NYT_Analyse_Dashboard.pbix)
+- [Ordner mit historischen Daten](https://github.com/jkschultze/data-analytics-portfolio/tree/main/WebTrafficDashboards/nyt_csvs)  
+- [Power-BI-Dashboard](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/NYT_Analyse_Dashboard.pbix)
 
 ---
 
@@ -89,8 +89,8 @@ Dieses Projekt untersucht einen synthetischen Website-Traffic-Datensatz mithilfe
 
 ## Dateien im Projekt
 - [Jupyter Notebook](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/Website%20Traffic.ipynb)
-- [Power-BI-Dashboard] (https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Website%20_Traffic_Analyse.pbix)
-- [Originaldatei] (https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/website_wata.csv)
+- [Power-BI-Dashboard](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Website%20_Traffic_Analyse.pbix)
+- [Originaldatei](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/website_wata.csv)
 
 ## Zusammenfassung und Erkenntnisse
 1. Organischer Traffic ist der dominante Kanal.  
@@ -152,7 +152,7 @@ Dieses Projekt nutzt R und Shiny, um ein interaktives Dashboard zu erstellen. Es
 Website Traffic Dataset (Kaggle)
 
 ## Dateien im Projekt
-- [Originaldatei] (https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/data.csv)
+- [Originaldatei](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/data.csv)
 - **R Script:** [Shiny-App mit vollständiger Analyse](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/app.R) 
 
 ## Executive Summary
