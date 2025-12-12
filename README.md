@@ -18,17 +18,70 @@ Die Projekte enthalten jeweils kurze Beschreibungen, verwendete Tools sowie ausg
 
 ## Inhaltsverzeichnis
 
-1. [US Superstore Analyse (2014–2017)](#us-superstore-analyse-2014–2017)
-2. [Marktanalyse: Immobilienpreise in Deutschland](#marktanalyse-immobilienpreise-in-deutschland)
-3. [R Data Portfolio](#r-data-portfolio)
-   - [Web Traffic Dashboard (Shiny App)](#web-traffic-dashboard-shiny-app)
-   - [Mtcars: Verbrauchs- und Leistungsanalyse](#mtcars-verbrauchs--und-leistungsanalyse)
-   - [Airquality & CO2: Umweltdatenanalyse](#airquality--co2-umweltdatenanalyse)
-   - [Star Wars Charakteranalyse](#star-wars-charakteranalyse)
-   - [Chickwts: Futteranalyse](#chickwts-futteranalyse)
-   - [Wetter Finnland 2017](#wetter-finnland-2017)
-   - [Warpbreaks: Fadenbruchanalyse](#warpbreaks-fadenbruchanalyse)
+1. [Redaktions- und Web-Analytics-Dashboards](#redaktions--und-web-analytics-dashboards)
+2. [US Superstore Analyse (2014–2017)](#us-superstore-analyse-2014–2017)
+3. [Marktanalyse: Immobilienpreise in Deutschland](#marktanalyse-immobilienpreise-in-deutschland)
+4. [R Data Portfolio](#r-data-portfolio)  
+   - [Mtcars: Verbrauchs- und Leistungsanalyse](#mtcars-verbrauchs--und-leistungsanalyse)  
+   - [Airquality & CO2: Umweltdatenanalyse](#airquality--co2-umweltdatenanalyse)  
+   - [Star Wars Charakteranalyse](#star-wars-charakteranalyse)  
+   - [Chickwts: Futteranalyse](#chickwts-futteranalyse)  
+   - [Wetter Finnland 2017](#wetter-finnland-2017)  
+   - [Warpbreaks: Fadenbruchanalyse](#warpbreaks-fadenbruchanalyse)  
    - [R Grundlagen](#r-grundlagen)
+
+---
+
+## Redaktions- und Web-Analytics-Dashboards
+
+![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_NYT_Dashboard.png) 
+
+Die folgenden Projekte analysieren Inhalte, Nutzerverhalten und redaktionelle Muster. Sie kombinieren Python, R und Power BI und zeigen, wie sich redaktionelle Daten modellieren und visualisieren lassen.
+
+### 1. NYT Content Dashboard (Python + Power BI)
+
+Analyse der „Most Popular“ und „Most Shared“ Artikel der New York Times über die NYT API.  
+Daten werden per Python-Skript automatisiert abgerufen, bereinigt und historisiert.  
+Das Power-BI-Dashboard zeigt u. a.:
+
+- Häufigste Themen, Personen, Orte und Organisationen  
+- Verteilung der Ressorts  
+- Veröffentlichungszeiten  
+- Vergleich von meistgelesenen und meistgeteilten Artikeln  
+
+- [Python Script](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/NYT_mostpopular_api.py) 
+- [Power-BI-Dashboard](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/NYT_Analyse_Dashboard.pbix)
+
+### 2. Website Traffic Analyse (Python)
+
+![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_Website_Traffic_Analyse.png)
+
+Explorative Datenanalyse eines synthetischen Webtraffic-Datensatzes.  
+Schwerpunkte:
+
+- Nutzerverhalten, Engagement, Bounce-Verhalten  
+- Traffic-Quellen und Kanalvergleich  
+- Outlier Detection  
+- Korrelationen zwischen Metriken  
+
+- [Jupyter Notebook](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/Website%20Traffic.ipynb)
+- [Power-BI-Dashboard](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Website%20_Traffic_Analyse.pbix)
+
+### 3. Website Traffic Dashboard (R Shiny)
+
+### Live Demo
+[**Website Traffic Dashboard ansehen**](https://jkschultze.shinyapps.io/webtrafficdashboard/)
+
+[![R](https://img.shields.io/badge/R-4.3.1-blue.svg)](https://www.r-project.org/) [![Shiny](https://img.shields.io/badge/Shiny-App-green.svg)](https://shiny.rstudio.com/)
+
+Interaktive Shiny-App zur Visualisierung eines Webtraffic-Datensatzes.  
+Funktionalitäten:
+
+- KPI-Analysen  
+- Scatterplots, Korrelationen, Segmentvergleiche  
+- Interaktive Tabellen und UI-Komponenten  
+
+- **R Script:** [Shiny-App mit vollständiger Analyse](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/app.R) 
 
 ---
 
@@ -82,25 +135,6 @@ Tools & Technologien:
 ---
 
 ## R Data Portfolio
-### Web Traffic Dashboard (Shiny App)
-
-Live-Demo: [Web Traffic Dashboard](https://jkschultze.shinyapps.io/webtrafficdashboard/)
-
-**Beschreibung:** 
-Dieses Projekt analysiert Website-Traffic-Daten aus Kaggle. Die interaktive Shiny-App zeigt:
-
-- KPIs nach Segmenten (Clicks, CTR, Bounce Rate, Time Spent)
-- Scatterplots (Verweildauer vs. Clicks, Titel-Länge vs. Clicks, Wörter vs. Verweildauer)
-- Korrelationen zwischen numerischen Features
-- Rohdaten-Tabellen mit Filtermöglichkeiten
-
-**R Script:** [Shiny-App mit vollständiger Analyse](WebTrafficDashboards/app.R) 
-
-**Projektordner** [README und Originaldatei](https://github.com/jkschultze/data-analytics-portfolio/tree/main/WebTrafficDashboards)
-
-
-
----
 
 ### Mtcars: Verbrauchs- und Leistungsanalyse
 
@@ -224,6 +258,7 @@ Grundlagenübungen zu Datentypen, Datenstrukturen, Kontrollfluss, Funktionen, St
 - T-SQL (Azure SQL Server)
 - Power BI
 - Power Query
+- Python
 - R (tidyverse, ggplot2, Shiny)
 - GitHub
 - Markdown
