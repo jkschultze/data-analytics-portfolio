@@ -1,6 +1,6 @@
 # Redaktions- & Web-Analytics Dashboards  
 
-![Dashboard-Visualisierung](WebTrafficDashboards/Screenshot_NYT_Dashboard.png) 
+![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_NYT_Dashboard.png) 
 
 Sammlung verschiedener Analyseprojekte zu Web-Traffic, Content-Performance und API-basierten Redaktionsdaten.
 
@@ -46,12 +46,14 @@ Ein Python-Script ruft wöchentlich Daten ab (Most Viewed und Most Shared) und s
 
 ## Dateien im Projekt
 - [Python Script](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/NYT_mostpopular_api.py) 
-- Ordner `nyt_csvs/` mit historischen Daten  
-- Power-BI-Dashboard (`NYT_Analyse_Dashboard.pbix`)
+- [Ordner mit historischen Daten] (https://github.com/jkschultze/data-analytics-portfolio/tree/main/WebTrafficDashboards/nyt_csvs)  
+- [Power-BI-Dashboard] (https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/NYT_Analyse_Dashboard.pbix)
 
 ---
 
 # 2. Website Traffic Analyse (Python + Power BI)
+
+![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_Website_Traffic_Analyse.png)
 
 ## Projektbeschreibung
 Dieses Projekt untersucht einen synthetischen Website-Traffic-Datensatz mithilfe von Python. Die Ergebnisse werden in Power BI visualisiert, um Nutzerverhalten, Traffic-Quellen und Engagement-Faktoren zu analysieren.
@@ -87,8 +89,8 @@ Dieses Projekt untersucht einen synthetischen Website-Traffic-Datensatz mithilfe
 
 ## Dateien im Projekt
 - [Jupyter Notebook](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/Website%20Traffic.ipynb)
-- Power-BI-Dashboard (`Website_Traffic_Analyse.pbix`)
-- Originaldatei (`website_wata.csv`)
+- [Power-BI-Dashboard] (https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Website%20_Traffic_Analyse.pbix)
+- [Originaldatei] (https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/website_wata.csv)
 
 ## Zusammenfassung und Erkenntnisse
 1. Organischer Traffic ist der dominante Kanal.  
@@ -150,8 +152,8 @@ Dieses Projekt nutzt R und Shiny, um ein interaktives Dashboard zu erstellen. Es
 Website Traffic Dataset (Kaggle)
 
 ## Dateien im Projekt
-- Originaldatei (`data.csv`)
-- **R Script:** [Shiny-App mit vollständiger Analyse](WebTrafficDashboards/app.R) 
+- [Originaldatei] (https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/data.csv)
+- **R Script:** [Shiny-App mit vollständiger Analyse](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/app.R) 
 
 ## Executive Summary
 - KPIs unterscheiden sich stark zwischen Segmenten.  
