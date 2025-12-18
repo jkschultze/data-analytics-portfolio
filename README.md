@@ -42,7 +42,6 @@ Die folgenden Projekte analysieren Inhalte, Nutzerverhalten und redaktionelle Mu
 
 [Zum interaktiven Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYzllY2UzNjQtN2QwNy00MjFiLWEwNDMtZjQyOGU5NWRkNWRlIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
 
-
 Analyse der „Most Popular“ und „Most Shared“ Artikel der New York Times über die NYT API.  
 Daten werden per Python-Skript automatisiert abgerufen, bereinigt und historisiert.  
 Das Power-BI-Dashboard zeigt u. a.:
@@ -58,8 +57,6 @@ Das Power-BI-Dashboard zeigt u. a.:
 ### 2. Website Traffic Analyse (Python)
 
 ![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_Website_Traffic_Analyse.png)
-
-[Zum interaktiven Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODE2MzQwYjEtNWE2Ny00MjRhLWI5MTItYWVkZTY1OGY0NDRjIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
 
 Explorative Datenanalyse eines synthetischen Webtraffic-Datensatzes.  
 Schwerpunkte:
