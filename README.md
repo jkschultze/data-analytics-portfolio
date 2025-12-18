@@ -40,7 +40,7 @@ Die folgenden Projekte analysieren Inhalte, Nutzerverhalten und redaktionelle Mu
 
 ![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_NYT_Dashboard.png) 
 
-[Zum interaktiven Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODE2MzQwYjEtNWE2Ny00MjRhLWI5MTItYWVkZTY1OGY0NDRjIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
+[Zum interaktiven Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYzllY2UzNjQtN2QwNy00MjFiLWEwNDMtZjQyOGU5NWRkNWRlIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
 
 
 Analyse der „Most Popular“ und „Most Shared“ Artikel der New York Times über die NYT API.  
@@ -53,13 +53,13 @@ Das Power-BI-Dashboard zeigt u. a.:
 - Vergleich von meistgelesenen und meistgeteilten Artikeln  
 
 - [Python Script](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/NYT_mostpopular_api.py) 
-- [Power-BI-Dashboard](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/NYT_Analyse_Dashboard.pbix)
+- [Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/NYT_Analyse_Dashboard.pbix)
 
 ### 2. Website Traffic Analyse (Python)
 
 ![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_Website_Traffic_Analyse.png)
 
-[Zum interaktiven Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYzllY2UzNjQtN2QwNy00MjFiLWEwNDMtZjQyOGU5NWRkNWRlIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
+[Zum interaktiven Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODE2MzQwYjEtNWE2Ny00MjRhLWI5MTItYWVkZTY1OGY0NDRjIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
 
 Explorative Datenanalyse eines synthetischen Webtraffic-Datensatzes.  
 Schwerpunkte:
@@ -70,7 +70,7 @@ Schwerpunkte:
 - Korrelationen zwischen Metriken  
 
 - [Jupyter Notebook](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/Website%20Traffic.ipynb)
-- [Power-BI-Dashboard](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Website%20_Traffic_Analyse.pbix)
+- [Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Website%20_Traffic_Analyse.pbix)
 
 ### 3. Website Traffic Dashboard (R Shiny)
 
@@ -111,7 +111,7 @@ Tools & Technologien:
 - DBeaver
 - GitHub
 
-- [SQL-Skript für die Analyse](SQL/US_Superstore_Analytics.sql)
+- [SQL Skript für die Analyse](SQL/US_Superstore_Analytics.sql)
 
 ---
 
@@ -133,9 +133,9 @@ Tools & Technologien:
 - Power Query
 - GitHub
 
-[Power BI Datei](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/Marktanalyse%20Immobilienpreise%20in%20Deutschland.pbix)
+[Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/Marktanalyse%20Immobilienpreise%20in%20Deutschland.pbix)
 
-[Zum Report](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/Report%20Marktanalyse%20Immobilienpreise%20in%20Deutschland.pdf)
+[Zum Report als PDF](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/Report%20Marktanalyse%20Immobilienpreise%20in%20Deutschland.pdf)
 
 ---
 
