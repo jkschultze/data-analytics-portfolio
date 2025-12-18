@@ -34,11 +34,14 @@ Die Projekte enthalten jeweils kurze Beschreibungen, verwendete Tools sowie ausg
 
 ## Redaktions- und Web-Analytics-Dashboards
 
-![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_NYT_Dashboard.png) 
-
 Die folgenden Projekte analysieren Inhalte, Nutzerverhalten und redaktionelle Muster. Sie kombinieren Python, R und Power BI und zeigen, wie sich redaktionelle Daten modellieren und visualisieren lassen.
 
 ### 1. NYT Content Dashboard (Python + Power BI)
+
+![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_NYT_Dashboard.png) 
+
+[Zum interaktiven Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODE2MzQwYjEtNWE2Ny00MjRhLWI5MTItYWVkZTY1OGY0NDRjIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
+
 
 Analyse der „Most Popular“ und „Most Shared“ Artikel der New York Times über die NYT API.  
 Daten werden per Python-Skript automatisiert abgerufen, bereinigt und historisiert.  
@@ -55,6 +58,8 @@ Das Power-BI-Dashboard zeigt u. a.:
 ### 2. Website Traffic Analyse (Python)
 
 ![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_Website_Traffic_Analyse.png)
+
+[Zum interaktiven Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYzllY2UzNjQtN2QwNy00MjFiLWEwNDMtZjQyOGU5NWRkNWRlIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
 
 Explorative Datenanalyse eines synthetischen Webtraffic-Datensatzes.  
 Schwerpunkte:
