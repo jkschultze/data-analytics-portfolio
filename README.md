@@ -120,6 +120,8 @@ Tools & Technologien:
 - [Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/HR_Analyse.pbix)
 - [CSV-Datensatz](https://github.com/jkschultze/data-analytics-portfolio/tree/main/Power%20BI%20/HR_data)
 
+---
+
 ## Retail-Analyse: US Superstore (2014–2017)
 
 ![Dashboard-Visualisierung](visuals/Dashboard_Retailanalyse_US_Superstore.png) 
