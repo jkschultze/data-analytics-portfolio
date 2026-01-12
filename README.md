@@ -12,16 +12,18 @@ Ich arbeite mit folgenden Tools und Sprachen:
 - Python (z. B. pandas, numpy, matplotlib, seaborn)
 - Excel
 
-Die Projekte enthalten jeweils kurze Beschreibungen, verwendete Tools sowie ausgewählte Visualisierungen.
-
 ---
 
 ## Inhaltsverzeichnis
 
 1. [Redaktions- und Web-Analytics-Dashboards](#redaktions--und-web-analytics-dashboards)
-2. [US Superstore Analyse (2014–2017)](#us-superstore-analyse-2014–2017)
-3. [Marktanalyse: Immobilienpreise in Deutschland](#marktanalyse-immobilienpreise-in-deutschland)
-4. [R Data Portfolio](#r-data-portfolio)  
+   - [NYT Content Dashboard](#nyt-content-dashboard)  
+   - [Website Traffic Analyse](#website-traffic-analyse)  
+   - [Website Traffic Shiny App](#website-traffic-shiny-app) 
+2. [HR Dashboard](#hr-dashboard)
+3. [Retail-Analyse: US Superstore (2014–2017)](#retail-analyse-us-superstore-2014–2017)
+4. [Marktanalyse: Immobilienpreise in Deutschland](#marktanalyse-immobilienpreise-in-deutschland)
+5. [R Data Portfolio](#r-data-portfolio)  
    - [Mtcars: Verbrauchs- und Leistungsanalyse](#mtcars-verbrauchs--und-leistungsanalyse)  
    - [Airquality & CO2: Umweltdatenanalyse](#airquality--co2-umweltdatenanalyse)  
    - [Star Wars Charakteranalyse](#star-wars-charakteranalyse)  
@@ -34,9 +36,7 @@ Die Projekte enthalten jeweils kurze Beschreibungen, verwendete Tools sowie ausg
 
 ## Redaktions- und Web-Analytics-Dashboards
 
-Die folgenden Projekte analysieren Inhalte, Nutzerverhalten und redaktionelle Muster. Sie kombinieren Python, R und Power BI und zeigen, wie sich redaktionelle Daten modellieren und visualisieren lassen.
-
-### 1. NYT Content Dashboard (Python + Power BI)
+### NYT Content Dashboard 
 
 ![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_NYT_Dashboard.png) 
 
@@ -54,7 +54,9 @@ Das Power-BI-Dashboard zeigt u. a.:
 - [Python Script](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/NYT_mostpopular_api.py) 
 - [Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/NYT_Analyse_Dashboard.pbix)
 
-### 2. Website Traffic Analyse (Python)
+---
+
+### Website Traffic Analyse
 
 ![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_Website_Traffic_Analyse.png)
 
@@ -69,9 +71,11 @@ Schwerpunkte:
 - [Jupyter Notebook](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/Website%20Traffic.ipynb)
 - [Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Website%20_Traffic_Analyse.pbix)
 
-### 3. Website Traffic Dashboard (R Shiny)
+---
 
-### Live Demo
+### Website Traffic Shiny App
+
+### Live Demo (R Shiny)
 [**Website Traffic Dashboard ansehen**](https://jkschultze.shinyapps.io/webtrafficdashboard/)
 
 [![R](https://img.shields.io/badge/R-4.3.1-blue.svg)](https://www.r-project.org/) [![Shiny](https://img.shields.io/badge/Shiny-App-green.svg)](https://shiny.rstudio.com/)
@@ -87,7 +91,36 @@ Funktionalitäten:
 
 ---
 
-## US Superstore Analyse (2014–2017)
+## HR-Analyse
+
+![Dashboard_Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/%20Screenshot_HR_Analyse.png)
+
+[Zum interaktiven Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYjBlZmM1OWItYjdiOC00N2RjLTgzODctYmQwMjdmN2M3MWUxIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
+
+Analyse von HR-Daten (2014-2025) mit Fokus auf Mitarbeiterstruktur, Gehälter, Zufriedenheit und Entwicklung.  
+Mehrere CSV-Tabellen wurden in Power BI geladen, in einem normalisierten Datenmodell verknüpft und mit Power Query aufbereitet.
+
+
+Schwerpunkte:
+- Zentrale HR-KPIs und Übersichtsseite
+- Gehaltsentwicklung und Gehaltsklassen
+- Mitarbeiterstruktur und -zufriedenheit im Zeitverlauf
+- Mitarbeiterentwicklung inkl. Beförderungsstatus
+
+Umsetzung:
+- Datenmodellierung und Transformation
+- DAX Measures, berechnete und bedingte Spalten
+- Vierseitiger Power-BI-Report mit KPI-Cards, Zeitreihen und Matrix-Visualisierungen
+
+Tools & Technologien:
+- Power BI
+- Power Query
+- DAX
+
+- [Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/HR_Analyse.pbix)
+- [CSV-Datensatz](https://github.com/jkschultze/data-analytics-portfolio/tree/main/Power%20BI%20/HR_data)
+
+## Retail-Analyse: US Superstore (2014–2017)
 
 ![Dashboard-Visualisierung](visuals/Dashboard_Retailanalyse_US_Superstore.png) 
 
