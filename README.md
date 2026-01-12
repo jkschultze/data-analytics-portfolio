@@ -20,7 +20,7 @@ Ich arbeite mit folgenden Tools und Sprachen:
    - [NYT Content Dashboard](#nyt-content-dashboard)  
    - [Website Traffic Analyse](#website-traffic-analyse)  
    - [Website Traffic Shiny App](#website-traffic-shiny-app) 
-2. [HR Dashboard](#hr-dashboard)
+2. [HR Analyse](#hr-analyse)
 3. [Retail-Analyse: US Superstore (2014–2017)](#retail-analyse-us-superstore-2014–2017)
 4. [Marktanalyse: Immobilienpreise in Deutschland](#marktanalyse-immobilienpreise-in-deutschland)
 5. [R Data Portfolio](#r-data-portfolio)  
