@@ -21,7 +21,7 @@ Ich arbeite mit folgenden Tools und Sprachen:
    - [Website Traffic Analyse](#website-traffic-analyse)  
    - [Website Traffic Shiny App](#website-traffic-shiny-app) 
 2. [HR Analyse](#hr-analyse)
-3. [Retail-Analyse: US Superstore (2014–2017)](#retail-analyse-us-superstore-2014–2017)
+3. [Retail-Analyse: US Superstore (2014–2017)](#retail--analyse-us-superstore-2014–-2017)
 4. [Marktanalyse: Immobilienpreise in Deutschland](#marktanalyse-immobilienpreise-in-deutschland)
 5. [R Data Portfolio](#r-data-portfolio)  
    - [Mtcars: Verbrauchs- und Leistungsanalyse](#mtcars-verbrauchs--und-leistungsanalyse)  
@@ -44,12 +44,6 @@ Ich arbeite mit folgenden Tools und Sprachen:
 
 Analyse der „Most Popular“ und „Most Shared“ Artikel der New York Times über die NYT API.  
 Daten werden per Python-Skript automatisiert abgerufen, bereinigt und historisiert.  
-Das Power-BI-Dashboard zeigt u. a.:
-
-- Häufigste Themen, Personen, Orte und Organisationen  
-- Verteilung der Ressorts  
-- Veröffentlichungszeiten  
-- Vergleich von meistgelesenen und meistgeteilten Artikeln  
 
 - [Python Script](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/NYT_mostpopular_api.py) 
 - [Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/NYT_Analyse_Dashboard.pbix)
@@ -61,12 +55,6 @@ Das Power-BI-Dashboard zeigt u. a.:
 ![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_Website_Traffic_Analyse.png)
 
 Explorative Datenanalyse eines synthetischen Webtraffic-Datensatzes.  
-Schwerpunkte:
-
-- Nutzerverhalten, Engagement, Bounce-Verhalten  
-- Traffic-Quellen und Kanalvergleich  
-- Outlier Detection  
-- Korrelationen zwischen Metriken  
 
 - [Jupyter Notebook](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/Website%20Traffic.ipynb)
 - [Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Website%20_Traffic_Analyse.pbix)
@@ -75,17 +63,12 @@ Schwerpunkte:
 
 ### Website Traffic Shiny App
 
-### Live Demo (R Shiny)
-[**Website Traffic Dashboard ansehen**](https://jkschultze.shinyapps.io/webtrafficdashboard/)
+### Live Demo
+[**Shiny App ansehen**](https://jkschultze.shinyapps.io/webtrafficdashboard/)
 
 [![R](https://img.shields.io/badge/R-4.3.1-blue.svg)](https://www.r-project.org/) [![Shiny](https://img.shields.io/badge/Shiny-App-green.svg)](https://shiny.rstudio.com/)
 
 Interaktive Shiny-App zur Visualisierung eines Webtraffic-Datensatzes.  
-Funktionalitäten:
-
-- KPI-Analysen  
-- Scatterplots, Korrelationen, Segmentvergleiche  
-- Interaktive Tabellen und UI-Komponenten  
 
 - **R Script:** [Shiny-App mit vollständiger Analyse](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/app.R) 
 
@@ -98,24 +81,12 @@ Funktionalitäten:
 [Zum interaktiven Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYjBlZmM1OWItYjdiOC00N2RjLTgzODctYmQwMjdmN2M3MWUxIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
 
 Analyse von HR-Daten (2014-2025) mit Fokus auf Mitarbeiterstruktur, Gehälter, Zufriedenheit und Entwicklung.  
-Mehrere CSV-Tabellen wurden in Power BI geladen, in einem normalisierten Datenmodell verknüpft und mit Power Query aufbereitet.
-
-
-Schwerpunkte:
-- Zentrale HR-KPIs und Übersichtsseite
-- Gehaltsentwicklung und Gehaltsklassen
-- Mitarbeiterstruktur und -zufriedenheit im Zeitverlauf
-- Mitarbeiterentwicklung inkl. Beförderungsstatus
 
 Umsetzung:
 - Datenmodellierung und Transformation
 - DAX Measures, berechnete und bedingte Spalten
 - Vierseitiger Power-BI-Report mit KPI-Cards, Zeitreihen und Matrix-Visualisierungen
 
-Tools & Technologien:
-- Power BI
-- Power Query
-- DAX
 
 - [Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/HR_Analyse.pbix)
 - [CSV-Datensatz](https://github.com/jkschultze/data-analytics-portfolio/tree/main/Power%20BI%20/HR_data)
@@ -126,10 +97,7 @@ Tools & Technologien:
 
 ![Dashboard-Visualisierung](visuals/Dashboard_Retailanalyse_US_Superstore.png) 
 
-Dieses Projekt analysiert den US-Superstore-Datensatz (2014–2017) mithilfe von T-SQL auf einem Azure SQL Server.  
-Ziel ist es, Umsatz, Gewinn, Kundenverhalten, Rabattstrategien, Lieferzeiten und regionale Unterschiede zu untersuchen.
-
-Weitere Inhalte:
+Umsetzung:
 - Datenbereinigung
 - KPI-Analysen zu Umsatz, Gewinn, Marge, Segmenten, Produkten
 - RFM-Analysen
@@ -152,18 +120,6 @@ Tools & Technologien:
 ![Dashboard-Visualisierung](visuals/Dashboard_Marktanalyse_Immobilien.png)
 
 Dieses Projekt analysiert Daten zu Immobilienpreisen, Mietrenditen und Erschwinglichkeit in 26 deutschen Städten.  
-Die Analyse wurde in Power BI erstellt und nutzt Power Query zur Datenaufbereitung.
-
-Schwerpunkte:
-- Preis-Einkommens-Verhältnisse
-- Mietrenditen
-- Erschwinglichkeitsklassifizierung
-- KPI- und Dashboard-Visualisierungen
-
-Tools & Technologien:
-- Power BI
-- Power Query
-- GitHub
 
 [Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/Marktanalyse%20Immobilienpreise%20in%20Deutschland.pbix)
 
@@ -287,15 +243,3 @@ Grundlagenübungen zu Datentypen, Datenstrukturen, Kontrollfluss, Funktionen, St
 - Statistik-Grundlagen
 - Import/Export (CSV, Excel)
 - Basis-Plots
-
----
-
-## Tech-Stack
-
-- T-SQL (Azure SQL Server)
-- Power BI
-- Power Query
-- Python
-- R (tidyverse, ggplot2, Shiny)
-- GitHub
-- Markdown
