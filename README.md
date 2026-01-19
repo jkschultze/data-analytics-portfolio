@@ -21,7 +21,7 @@ Ich arbeite mit folgenden Tools und Sprachen:
    - [Website Traffic Analyse](#website-traffic-analyse)  
    - [Website Traffic Shiny App](#website-traffic-shiny-app) 
 2. [HR Analyse](#hr-analyse)
-3. [Retail-Analyse: US Superstore (2014–2017)](#retail--analyse-us-superstore-2014–-2017)
+3. [Retail-Analyse](#retail-analyse)
 4. [Marktanalyse: Immobilienpreise in Deutschland](#marktanalyse-immobilienpreise-in-deutschland)
 5. [R Data Portfolio](#r-data-portfolio)  
    - [Mtcars: Verbrauchs- und Leistungsanalyse](#mtcars-verbrauchs--und-leistungsanalyse)  
@@ -93,7 +93,7 @@ Umsetzung:
 
 ---
 
-## Retail-Analyse: US Superstore (2014–2017)
+## Retail-Analyse
 
 ![Dashboard-Visualisierung](visuals/Dashboard_Retailanalyse_US_Superstore.png) 
 
@@ -109,7 +109,6 @@ Tools & Technologien:
 - Azure SQL Server
 - T-SQL
 - DBeaver
-- GitHub
 
 - [SQL Skript für die Analyse](SQL/US_Superstore_Analytics.sql)
 
