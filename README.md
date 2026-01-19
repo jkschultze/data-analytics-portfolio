@@ -63,7 +63,6 @@ Explorative Datenanalyse eines synthetischen Webtraffic-Datensatzes.
 
 ### Website Traffic Shiny App
 
-### Live Demo
 [**Shiny App ansehen**](https://jkschultze.shinyapps.io/webtrafficdashboard/)
 
 [![R](https://img.shields.io/badge/R-4.3.1-blue.svg)](https://www.r-project.org/) [![Shiny](https://img.shields.io/badge/Shiny-App-green.svg)](https://shiny.rstudio.com/)
