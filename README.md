@@ -53,7 +53,8 @@ Daten werden per Python-Skript automatisiert abgerufen, bereinigt und historisie
 
 ![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_Website_Traffic_Analyse.png)
 
-[Zum interaktiven Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYzllY2UzNjQtN2QwNy00MjFiLWEwNDMtZjQyOGU5NWRkNWRlIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
+[Zum interaktiven Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODE2MzQwYjEtNWE2Ny00MjRhLWI5MTItYWVkZTY1OGY0NDRjIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
+
 Explorative Datenanalyse eines synthetischen Webtraffic-Datensatzes.  
 
 - [Jupyter Notebook](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/Website%20Traffic.ipynb)
