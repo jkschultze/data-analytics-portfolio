@@ -19,7 +19,6 @@ Ich arbeite mit folgenden Tools und Sprachen:
 1. [Redaktions- und Web-Analytics-Dashboards](#redaktions--und-web-analytics-dashboards)
    - [NYT Content Dashboard](#nyt-content-dashboard)  
    - [Website Traffic Analyse](#website-traffic-analyse)  
-   - [Website Traffic Shiny App](#website-traffic-shiny-app) 
 2. [HR Analyse](#hr-analyse)
 3. [Retail-Analyse](#retail-analyse)
 4. [Marktanalyse: Immobilienpreise in Deutschland](#marktanalyse-immobilienpreise-in-deutschland)
@@ -61,18 +60,6 @@ Explorative Datenanalyse eines synthetischen Webtraffic-Datensatzes.
 
 ---
 
-### Website Traffic Shiny App
-
-[**Shiny App ansehen**](https://jkschultze.shinyapps.io/webtrafficdashboard/)
-
-[![R](https://img.shields.io/badge/R-4.3.1-blue.svg)](https://www.r-project.org/) [![Shiny](https://img.shields.io/badge/Shiny-App-green.svg)](https://shiny.rstudio.com/)
-
-Interaktive Shiny-App zur Visualisierung eines Webtraffic-Datensatzes.  
-
-- **R Script:** [Shiny-App mit vollständiger Analyse](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/app.R) 
-
----
-
 ## HR-Analyse
 
 ![Dashboard_Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/%20Screenshot_HR_Analyse.png)
@@ -108,8 +95,10 @@ Tools & Technologien:
 - Azure SQL Server
 - T-SQL
 - DBeaver
+- Excel
 
 - [SQL Skript für die Analyse](SQL/US_Superstore_Analytics.sql)
+- [Excel Datei für Pivot-Tabellen und Dashboard-Entwicklung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Excel/US_Superstore_EDA.xlsx)
 
 ---
 
