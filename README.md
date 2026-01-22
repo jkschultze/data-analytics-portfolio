@@ -17,8 +17,8 @@ Ich arbeite mit folgenden Tools und Sprachen:
 ## Inhaltsverzeichnis
 
 1. [Redaktions- und Web-Analytics-Dashboards](#redaktions--und-web-analytics-dashboards)
-   - [NYT Content Dashboard](#nyt-content-dashboard)  
-   - [Website Traffic Analyse](#website-traffic-analyse)  
+   - [Website Traffic Analyse](#website-traffic-analyse)
+   - [NYT Content Dashboard](#nyt-content-dashboard) 
 2. [HR Analyse](#hr-analyse)
 3. [Retail-Analyse](#retail-analyse)
 4. [Marktanalyse: Immobilienpreise in Deutschland](#marktanalyse-immobilienpreise-in-deutschland)
@@ -35,18 +35,6 @@ Ich arbeite mit folgenden Tools und Sprachen:
 
 ## Redaktions- und Web-Analytics-Dashboards
 
-### NYT Content Dashboard 
-
-[![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_NYT_Dashboard.png)](https://app.powerbi.com/view?r=eyJrIjoiYzllY2UzNjQtN2QwNy00MjFiLWEwNDMtZjQyOGU5NWRkNWRlIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9) 
-
-Analyse der „Most Popular“ und „Most Shared“ Artikel der New York Times über die NYT API.  
-Daten werden per Python-Skript automatisiert abgerufen, bereinigt und historisiert.  
-
-- [Python Script](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/NYT_mostpopular_api.py) 
-- [Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/NYT_Analyse_Dashboard.pbix)
-
----
-
 ### Website Traffic Analyse
 
 [![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_Website_Traffic_Analyse.png)](https://app.powerbi.com/view?r=eyJrIjoiODE2MzQwYjEtNWE2Ny00MjRhLWI5MTItYWVkZTY1OGY0NDRjIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
@@ -56,6 +44,18 @@ Explorative Datenanalyse eines synthetischen Webtraffic-Datensatzes.
 - [Jupyter Notebook](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/Website%20Traffic.ipynb)
 - [Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Website%20_Traffic_Analyse.pbix)
 
+---
+
+### NYT Content Dashboard 
+
+[![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_NYT_Dashboard.png)](https://app.powerbi.com/view?r=eyJrIjoiYzllY2UzNjQtN2QwNy00MjFiLWEwNDMtZjQyOGU5NWRkNWRlIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9) 
+
+Analyse der „Most Popular“ und „Most Shared“ Artikel der New York Times über die NYT API.  
+Daten werden per Python-Skript automatisiert abgerufen, bereinigt und historisiert.  
+
+- [Python Script](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Python/NYT_mostpopular_api.py) 
+- [Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/NYT_Analyse_Dashboard.pbix)
+  
 ---
 
 ## HR-Analyse
