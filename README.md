@@ -37,9 +37,7 @@ Ich arbeite mit folgenden Tools und Sprachen:
 
 ### NYT Content Dashboard 
 
-![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_NYT_Dashboard.png) 
-
-[Zum interaktiven Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYzllY2UzNjQtN2QwNy00MjFiLWEwNDMtZjQyOGU5NWRkNWRlIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
+[![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_NYT_Dashboard.png)](https://app.powerbi.com/view?r=eyJrIjoiYzllY2UzNjQtN2QwNy00MjFiLWEwNDMtZjQyOGU5NWRkNWRlIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9) 
 
 Analyse der „Most Popular“ und „Most Shared“ Artikel der New York Times über die NYT API.  
 Daten werden per Python-Skript automatisiert abgerufen, bereinigt und historisiert.  
@@ -51,9 +49,7 @@ Daten werden per Python-Skript automatisiert abgerufen, bereinigt und historisie
 
 ### Website Traffic Analyse
 
-![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_Website_Traffic_Analyse.png)
-
-[Zum interaktiven Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODE2MzQwYjEtNWE2Ny00MjRhLWI5MTItYWVkZTY1OGY0NDRjIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
+[![Dashboard-Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/WebTrafficDashboards/Screenshot_Website_Traffic_Analyse.png)](https://app.powerbi.com/view?r=eyJrIjoiODE2MzQwYjEtNWE2Ny00MjRhLWI5MTItYWVkZTY1OGY0NDRjIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
 
 Explorative Datenanalyse eines synthetischen Webtraffic-Datensatzes.  
 
@@ -64,9 +60,7 @@ Explorative Datenanalyse eines synthetischen Webtraffic-Datensatzes.
 
 ## HR-Analyse
 
-![Dashboard_Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/%20Screenshot_HR_Analyse.png)
-
-[Zum interaktiven Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYjBlZmM1OWItYjdiOC00N2RjLTgzODctYmQwMjdmN2M3MWUxIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
+[![Dashboard_Visualisierung](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/%20Screenshot_HR_Analyse.png)](https://app.powerbi.com/view?r=eyJrIjoiYjBlZmM1OWItYjdiOC00N2RjLTgzODctYmQwMjdmN2M3MWUxIiwidCI6Ijg3NDg3NTRjLTcyZDMtNDdiNy1hNzQ5LWRlNTI1YTQwNzY2NCJ9)
 
 Analyse von HR-Daten (2014-2025) mit Fokus auf Mitarbeiterstruktur, Gehälter, Zufriedenheit und Entwicklung.  
 
@@ -74,7 +68,6 @@ Umsetzung:
 - Datenmodellierung und Transformation
 - DAX Measures, berechnete und bedingte Spalten
 - Vierseitiger Power-BI-Report mit KPI-Cards, Zeitreihen und Matrix-Visualisierungen
-
 
 - [Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/HR_Analyse.pbix)
 - [CSV-Datensatz](https://github.com/jkschultze/data-analytics-portfolio/tree/main/Power%20BI%20/HR_data)
