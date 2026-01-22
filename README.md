@@ -99,13 +99,11 @@ Tools & Technologien:
 
 ## Marktanalyse: Immobilienpreise in Deutschland
 
-![Dashboard-Visualisierung](visuals/Dashboard_Marktanalyse_Immobilien.png)
+[![Dashboard-Visualisierung](visuals/Dashboard_Marktanalyse_Immobilien.png)](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/Marktanalyse%20Immobilienpreise%20in%20Deutschland.pdf)
 
 Dieses Projekt analysiert Daten zu Immobilienpreisen, Mietrenditen und Erschwinglichkeit in 26 deutschen Städten.  
 
 [Power BI Projekt](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/Marktanalyse%20Immobilienpreise%20in%20Deutschland.pbix)
-
-[Zum Report als PDF](https://github.com/jkschultze/data-analytics-portfolio/blob/main/Power%20BI%20/Report%20Marktanalyse%20Immobilienpreise%20in%20Deutschland.pdf)
 
 ---
 
